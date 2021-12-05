@@ -1,0 +1,21 @@
+// Colors
+$black: #222;
+$dark-orange: #A35709;
+$orange: #FF8303;
+$beige: #F0E3CA;
+$white: #fff;
+
+// Fonts
+$heading: 'Karla', sans-serif;
+$body: 'Lato', sans-serif;
+
+// Container
+$container-padding: 15px;
+$container-width: calc(1400px + #{$container-padding * 2});
+
+// Transition timings
+$transition-general-half-time: 150;
+$transition-general-time: 300;
+
+$transition-general-half: #{$transition-general-half-time}ms;
+$transition-general: #{$transition-general-time}ms;

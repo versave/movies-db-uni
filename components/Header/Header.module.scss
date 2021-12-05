@@ -1,0 +1,20 @@
+@use "styles/variables" as *;
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    padding: 10px 15px;
+    margin-bottom: 100px;
+    background: rgba($dark-orange, 0.8);
+    text-align: center;
+    box-shadow: 0 3px 5px -2px $black;
+
+    h1 {
+        color: $white;
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+}

@@ -1,0 +1,26 @@
+@use "styles/variables" as *;
+
+.movie {
+    text-align: center;
+    color: $white;
+    transition: transform $transition-general;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+}
+
+.poster {
+    min-height: 500px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    box-shadow: 0 0 3px 2px $beige;
+    cursor: pointer;
+}
