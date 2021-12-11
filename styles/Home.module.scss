@@ -66,6 +66,7 @@
     @include chevron;
 
     content: '';
+    margin-top: 5px;
 
     @media (max-width: $tablet) {
       @include chevron(15px, 3px);
