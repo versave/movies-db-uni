@@ -1,11 +1,12 @@
 import type {NextPage} from 'next'
 import classes from '../styles/Home.module.scss'
 import {Container} from "../components/Container/Container";
-import {moviesData} from "../data/movies";
 import {MovieItem} from "../components/MovieItem/MovieItem";
 import {useEffect, useState} from "react";
+import {useSiteContext} from "../context/context";
 
 const Home: NextPage = () => {
+    const { movies } = useSiteContext();
     const [showScrollTopButton, setShowScrollTopButton] = useState(false);
 
     useEffect(() => {
@@ -32,7 +33,7 @@ const Home: NextPage = () => {
         <div className={classes.home}>
             <Container>
                 <div className={classes.movies}>
-                    {moviesData.map((movie, idx) => (
+                    {movies.filteredMovies.map((movie, idx) => (
                         <div key={`movie-${idx}`} className={classes.movie}>
                             <MovieItem movie={movie} />
                         </div>

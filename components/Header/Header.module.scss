@@ -6,23 +6,61 @@
     left: 0;
     right: 0;
     z-index: 5;
-    padding: 10px 15px;
+    display: flex;
+    padding: 10px 220px;
     margin-bottom: 100px;
     background: rgba($dark-orange, 0.8);
     text-align: center;
     box-shadow: 0 3px 5px -2px $black;
+
+    @media (max-width: $tablet) {
+        padding: 10px 15px;
+    }
 
     @media (max-width: $phone) {
         margin-bottom: 50px;
     }
 
     h1 {
+        position: absolute;
+        top: 5px;
+        left: 15px;
         color: $white;
         font-size: 40px;
         letter-spacing: 1px;
 
+        @media (max-width: $tablet) {
+            position: static;
+        }
+
         @media (max-width: $phone) {
             font-size: 30px;
         }
+    }
+}
+
+.search {
+    flex: 0 1 400px;
+    margin: auto;
+
+    @media (max-width: $tablet) {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex: auto;
+        padding: 10px 15px;
+        background: rgba($black, 0.8);
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+        border: 0;
+        border-radius: 30px;
+        padding: 0 20px;
+        font-family: $heading;
+        font-weight: 700;
+        text-align: center;
     }
 }

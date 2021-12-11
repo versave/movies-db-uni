@@ -3,6 +3,7 @@
 
 .home {
   position: relative;
+  min-height: 100vh;
   padding-bottom: 120px;
 
   &:after {
@@ -55,10 +56,21 @@
   opacity: 0;
   transition: $transition-general;
 
+  @media (max-width: $tablet) {
+    width: 40px;
+    height: 40px;
+    bottom: 80px;
+  }
+
   &:after {
     @include chevron;
 
     content: '';
+
+    @media (max-width: $tablet) {
+      @include chevron(15px, 3px);
+      margin-top: 5px;
+    }
   }
 
   &.visible {
