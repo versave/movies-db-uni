@@ -19,3 +19,9 @@ $transition-general-time: 300;
 
 $transition-general-half: #{$transition-general-half-time}ms;
 $transition-general: #{$transition-general-time}ms;
+
+// Breakpoints
+$desktop: 1280px;
+$tablet: 968px;
+$phone: 768px;
+$phone-xs: 480px;

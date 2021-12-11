@@ -23,4 +23,20 @@
     background-position: 50% 50%;
     box-shadow: 0 0 3px 2px $beige;
     cursor: pointer;
+
+    @media (max-width: $desktop) {
+        min-height: 36vw;
+    }
+
+    @media (max-width: $tablet) {
+        min-height: 42vw;
+    }
+
+    @media (max-width: $phone) {
+        min-height: 70vw;
+    }
+
+    @media (max-width: $phone-xs) {
+        min-height: 125vw;
+    }
 }

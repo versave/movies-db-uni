@@ -1,0 +1,11 @@
+@use "variables" as *;
+
+@mixin chevron($size: 15px, $borderWidth: 4px, $color: $black) {
+    display: inline-block;
+    transform: rotate(-135deg);
+    width: $size;
+    height: $size;
+    border-width: 0 $borderWidth $borderWidth 0;
+    border-style: solid;
+    border-color: $color;
+}
